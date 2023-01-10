@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Heejin"
+  name             : "희진"
   avatar           : "/assets/images/bugcat.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "제 블로그에 오신 것을 환영합니다."
+  bio              : "빛을 내며 나아가다"
   location         : "South Korea"
   email            :
   links:
