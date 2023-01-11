@@ -1,12 +1,14 @@
 ---
 title:  "블로그 첫 포스팅" 
+excerpt: "블로그의 첫 번째 글입니다."
 
 categories:
-  -  Etc
+  -  talk
 tags:
-  - [Etc]
+  - [talk]
 
-toc: true
+toc: false
+toc_label: 목차
 toc_sticky: true
 
 date: 2023-01-10
