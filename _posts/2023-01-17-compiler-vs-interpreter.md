@@ -3,7 +3,7 @@ title:  "프로그래밍 언어에 관한 개론적인 이야기"
 excerpt: "프로그래밍 언어와 관련된 간단한 개념들을 정리하였습니다."
 
 categories:
-  -  compiler
+  -  talk
 tags:
   - [Programming]
 
