@@ -33,6 +33,13 @@ layout: default
           {% if page.title %}<h1 id="page-title" class="page__title p-name" itemprop="headline">
             <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
           </h1>{% endif %}
+          {% if page.last_modified_at and page.date %}
+            <p class="page__meta"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y.%m.%d" }}</time>&nbsp&nbsp&nbsp<strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ "업데이트:" }}</strong> <time datetime="{{ page.last_modified_at | date: date_to_xmlschema }}">{{ page.last_modified_at | date: "%Y.%m.%d" }}</time></p>
+          {% elsif page.date %}
+            <p class="page__meta"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y.%m.%d" }}</time></p>
+          {% elsif page.last_modified_at %}
+            <p class="page__meta"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y.%m.%d" }}</time></p>
+          {% endif %}
           {% include page__meta.html %}
         </header>
       {% endunless %}
@@ -51,15 +58,16 @@ layout: default
       </section>
 
       <footer class="page__meta">
+        <div class="notice">
+          개인 공부 기록용 블로그입니다. 틀린 부분이 있다면 언제든 댓글 또는 메일로 지적 부탁드립니다!
+        </div>
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
         {% include page__taxonomy.html %}
-        {% include page__date.html %}
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
-
       {% include post_pagination.html %}
     </div>
 
