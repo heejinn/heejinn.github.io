@@ -1,5 +1,5 @@
 ---
-title: "Talk"
+title: "잡담"
 layout: archive
 permalink: categories/talk
 author_profile: true
