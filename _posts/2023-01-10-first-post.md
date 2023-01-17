@@ -5,7 +5,7 @@ excerpt: "블로그의 첫 번째 글입니다."
 categories:
   -  talk
 tags:
-  - [talk]
+  - [Talk]
 
 toc: false
 toc_label: 목차
