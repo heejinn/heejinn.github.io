@@ -40,7 +40,7 @@ layout: default
           {% elsif page.last_modified_at %}
             <p class="page__meta"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y.%m.%d" }}</time></p>
           {% endif %}
-          {% include page__meta.html %}
+          <!-- {% include page__meta.html %} --->
         </header>
       {% endunless %}
 
