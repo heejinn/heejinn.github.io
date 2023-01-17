@@ -34,7 +34,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "os" %}
-                        <li><a href="/categories/os" class="">운영체제 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/os" class="">OS ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -50,7 +50,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "talk" %}
-                        <li><a href="/categories/talk" class="">잡담 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/talk" class="">Talk ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

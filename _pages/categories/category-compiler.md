@@ -1,5 +1,5 @@
 ---
-title: "컴파일러"
+title: "Compiler"
 layout: archive
 permalink: categories/compiler
 author_profile: true
