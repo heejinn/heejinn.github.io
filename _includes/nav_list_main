@@ -38,13 +38,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "compiler" %}
-                        <li><a href="/categories/compiler" class="">Compiler ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
             <span class="nav__sub-title">Graphics</span>
             <ul>
                 {% for category in site.categories %}
